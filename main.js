@@ -122,79 +122,122 @@ for(var i = 2; i < 11; i = i + 2){
   }
 
 // Interrupting cow
-var sentenceArray = ["the", "cow", "danced", "through", 
-"the", "trees", "in", "the", "light", "of", "the", "moon"];
-for(let i = 0; i < sentenceArray.length; i++);
+// Copy and paste the following array into your JavaScript file:
 var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
-let sentence = "";
+// Write a loop that builds sentenceArray into a real sentence, except every fourth word should be "MOOOOOO". Hint: look up the modulus operator.
+// Run your sentence to the terminal.
+    let cowSentence = " "
 
-for(let i = 0; i < sentenceArray.length; i++){
-  
-  if( (i % 3 == 0) 
-     && (i != 0) //added so sentence doesn't start with a moo
-    ){
-    sentence = (sentence + ' MOOOOOO ' + sentenceArray[i]);
-    
-  }
-  
-  else{
-    sentence = sentence + " " + sentenceArray[i] ;
-  }
+
+
+
+for (let i = 0; i < sentenceArray.length; i++){
+if((i+ 1
+ ) % 3 === 0)
+ {cowSentence = cowSentence + ` ${sentenceArray[i]} Mooooooo`}
+else{
+    cowSentence = cowSentence +  ` ${sentenceArray[i]}`}
+
+
 }
+console.log(cowSentence)
+
+
+
+
+
+// the cow danced MOOOOOOOO through the trees 
+// MOOOOOOOO in the light MOOOOOOOO of the moon
+
+
+
+// The Beatles
+
+
+
+
+
+
+const beatles = {
+    albums: ["Abbey Road", "Sgt Peppers Lonely Heart's Club Band", "Revolver", "Magical Mystery Tour"],
+    history: {
+        formed: 1960,
+        disbanded: 1970
+    },
+    members: [
+        {
+            name: "George Harrison",
+            birth: 1943,
+            death: 2001
+        },
+        {
+            name: "Paul McCartney",
+            birth: 1942,
+            death: null
+        },
+        {
+            name: "John Lennon",
+            birth: 1940,
+            death: 1980
+        },
+        {
+            name: "Ringo Starr",
+            birth: 1940,
+            death: null
+        }
+    ],
     
-    console.log(sentence);
-
-
-
-
-
-
-
-
-
-// The Beetles
-
-// const beatles = {
-//     albums: ["Abbey Road", "Sgt Peppers Lonely Heart's Club Band", "Revolver", "Magical Mystery Tour"],
-//     history: {
-//         formed: 1960,
-//         disbanded: 1970
-//     },
-//     members: [
-//         {
-//             name: "George Harrison",
-//             birth: 1943,
-//             death: 2001
-//         },
-//         {
-//             name: "Paul McCartney",
-//             birth: 1942,
-//             death: null
-//         },
-//         {
-//             name: "John Lennon",
-//             birth: 1940,
-//             death: 1980
-//         },
-//         {
-//             name: "Ringo Starr",
-//             birth: 1940,
-//             death: null
-//         }
-//     ]
-// }
-// let albums = ''
-// for(let i = 0; i < beatles.albums.length; i++){
-//     if(i === beatles.albums.length - 1){
-//         albums += `and ${beatles.albums[i]}`
-//     }
     
-//     else{
-//     albums += `${beatles.albums[i]}, `
-//     }
-// }
-// for(let i = 0; i < beatles.members.length; i++){
-// console.log(
-// `${beatles.members[i].name} was in the Beatles from ${beatles.history.formed} to ${beatles.history.disbanded}. He was born in ${beatles.members[i].birth} . He contributed heavily to the albums ${albums}.
-// `)};
+}
+
+// variable for each different members of the beatles
+let George1 = beatles.members[0].name   
+let George2 = beatles.members[0].birth
+let George3 = beatles.members[0].death 
     
+let Paul1 = beatles.members[1].name
+let Paul2 = beatles.members[1].birth
+let Paul3 = beatles.members[1].death
+
+
+let John1 = beatles.members[2].name
+let John2 = beatles.members[2].birth
+let John3 = beatles.members[2].death
+
+let Ringo1 = beatles.members[3].name
+let Ringo2 = beatles.members[3].birth
+let Ringo3 = beatles.members[3].death
+
+
+
+
+
+
+// Output the following values to the terminal.
+
+// 
+console.log(`${George1} was in the Beatles from 
+ ${beatles.history.formed} to ${beatles.history.disbanded}. 
+He was born in ${George2}. 
+He contributed heavily to the ${beatles.albums} Album.`)
+
+console.log(`${Paul1} was in the Beatles from 
+ ${beatles.history.formed} to ${beatles.history.disbanded}. 
+He was born in ${Paul2}. 
+He contributed heavily to the ${beatles.albums} Album.`)
+
+
+console.log(`${John1} was in the Beatles from 
+ ${beatles.history.formed} to ${beatles.history.disbanded}. 
+He was born in ${John2}. 
+He contributed heavily to the ${beatles.albums} Album.`)
+
+
+
+console.log(`${Ringo1} was in the Beatles from 
+ ${beatles.history.formed} to ${beatles.history.disbanded}. 
+He was born in ${Ringo2}. 
+He contributed heavily to the ${beatles.albums} Album.`)
+
+
+
